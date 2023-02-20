@@ -70,5 +70,6 @@ button:hover{
 
 button:focus{
   outline: none;
-background-color: rgb(72, 76, 188);
+/* background-color: rgb(72, 76, 188); */
 }
+
