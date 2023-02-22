@@ -250,6 +250,9 @@ SubmitEl.addEventListener('click', function(){
   }else{
     if (answer === quizInfo[currentQuiz].correct) {
       score++
+      // play correct sound
+  }else{
+    // play error sound
   }
       currentQuiz++;
   if (currentQuiz < randomQuestions.length){
