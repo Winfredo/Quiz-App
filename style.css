@@ -73,3 +73,6 @@ button:focus{
 /* background-color: rgb(72, 76, 188); */
 }
 
+.hidden{
+  display: none;
+}

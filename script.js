@@ -185,12 +185,17 @@ const b_text = document.getElementById('b_text');
 const c_text = document.getElementById('c_text');
 const d_text = document.getElementById('d_text');
 const SubmitEl = document.getElementById('submit-el');
-
+const initScreen = document.getElementById("initscreen")
+const playground = document.getElementById("playground")
 let currentQuiz = 0;
 let score = 0;
-generateRandomQuestions()
-loadQuiz()
+function startQuiz()
+{
+  initScreen.classList.add("hidden")
+  playground.classList.remove("hidden")
+}
 
+document.getElementById("start").addEventListener("click",startQuiz)
 function generateRandomQuestions(numQuestions) {
   const selectedQuestions = [];
   const indices = [];
@@ -212,18 +217,16 @@ console.log(randomQuestions);
 function loadQuiz() {
   deselectAnswers();
 
-  const currentQuizInfo = quizInfo[currentQuiz];
+  const currentQuizInfo = randomQuestions[currentQuiz];
 
   QuestionEl.innerText = currentQuizInfo.question;
   a_text.innerText = currentQuizInfo.a;
   b_text.innerText = currentQuizInfo.b;
   c_text.innerText = currentQuizInfo.c;
   d_text.innerText = currentQuizInfo.d;
-
- 
 }
 
-
+loadQuiz()
 
 function deselectAnswers() {
   AnswerEl.forEach(AnswerEl => AnswerEl.checked = false)
@@ -240,22 +243,25 @@ function getSelected() {
 }
 
 SubmitEl.addEventListener('click', function(){
-  const answer = getSelected()
-if (answer === quizInfo[currentQuiz].correct) {
-    score++
-}
-
-    currentQuiz++
- 
-if (currentQuiz < quizInfo.length){
-    loadQuiz()
-}else {
-    quiz.innerHTML = `
-    <h2> You have answered ${score}/ ${quizInfo.length} questions correctly.
-
-    <button onclick="location.reload()">Reload</button>
-    `
+  const answer = getSelected() || null
+  if(!answer)
+  {
+    alert("Invalid answer")
+  }else{
+    if (answer === quizInfo[currentQuiz].correct) {
+      score++
+  }
+      currentQuiz++;
+  if (currentQuiz < randomQuestions.length){
+      loadQuiz()
+  }else {
+      quiz.innerHTML = `
+      <h2> You have answered ${score}/ ${randomQuestions.length } questions correctly.
   
-}
+      <button onclick="location.reload()">Reload</button>
+      `
+    
+  }
+  }
 
 })
