@@ -18,12 +18,15 @@ body{
 
 .quiz-container{
   width: 600px;
-  /* height: 200px; */
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px 6px rgba(100, 100, 100, 0.3);
   overflow: hidden;
 }
+
+/* #start{
+  font-family: 
+} */
 
 .quiz-header{
   padding: 4rem;
@@ -75,4 +78,7 @@ button:focus{
 
 .hidden{
   display: none;
+}
+ul{
+padding-left: 50px;
 }
