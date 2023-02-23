@@ -187,6 +187,8 @@ const d_text = document.getElementById('d_text');
 const SubmitEl = document.getElementById('submit-el');
 const initScreen = document.getElementById("initscreen")
 const playground = document.getElementById("playground")
+const CORRECTSOUND = new Audio("./sounds/sound_correct.mp3")
+const INCORRECTSOUND = new Audio("./sounds/sound_incorrect.mp3")
 let currentQuiz = 0;
 let score = 0;
 function startQuiz()
@@ -248,18 +250,19 @@ SubmitEl.addEventListener('click', function(){
   {
     alert("Invalid answer")
   }else{
-    if (answer === quizInfo[currentQuiz].correct) {
+    console.log(answer)
+    if (answer == randomQuestions[currentQuiz].correct) {
       score++
-      // play correct sound
-  }else{
-    // play error sound
+      CORRECTSOUND.play()
+    }else{
+    INCORRECTSOUND.play()
   }
       currentQuiz++;
   if (currentQuiz < randomQuestions.length){
       loadQuiz()
   }else {
       quiz.innerHTML = `
-      <h2> You have answered ${score}/ ${randomQuestions.length } questions correctly.
+      <h2> You have answered ${score}/ ${randomQuestions.length} questions correctly.
   
       <button onclick="location.reload()">Reload</button>
       `
