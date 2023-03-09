@@ -8,12 +8,181 @@ const quizInfo = [
     correct: "b"
   },
   {
+    question: "Who won the first FIFA World Cup in 1930?",
+    a: "Brazil",
+    b: "Uruguay",
+    c: "Argentina",
+    d: "Germany",
+    correct: "b"
+    },
+    {
+    question: "What is the name of the ball used in official FIFA matches?",
+    a: "Adidas Telstar",
+    b: "Nike Ordem",
+    c: "Puma Final",
+    d: "Umbro Neo Pro",
+    correct: "a"
+    }, 
+    {
+    question: "Which country has won the most World Cup titles?",
+    a: "Germany",
+    b: "Brazil",
+    c: "Italy",
+    d: "Argentina",
+    correct: "b"
+    },
+    {
+    question: "Who is the all-time top scorer in the World Cup?",
+    a: "Miroslav Klose",
+    b: "Ronaldo",
+    c: "Lionel Messi",
+    d: "Pele",
+    correct: "a"
+    },
+    {
+    question: "Which player has won the most Ballon d'Or awards?",
+    a: "Lionel Messi",
+    b: "Cristiano Ronaldo",
+    c: "Michel Platini",
+    d: "Johan Cruyff",
+    correct: "a"
+    },
+    {
+    question: "Which club has won the most UEFA Champions League titles?",
+    a: "Barcelona",
+    b: "Manchester United",
+    c: "AC Milan",
+    d: "Real Madrid",
+    correct: "d"
+    },
+    {
+    question: "Who scored the 'Hand of God' goal in the 1986 World Cup?",
+    a: "Diego Maradona",
+    b: "Pele",
+    c: "Lionel Messi",
+    d: "Ronaldo",
+    correct: "a"
+    },
+    {
+    question: "Who is the current world record holder for the most goals scored in a single season?",
+    a: "Lionel Messi",
+    b: "Cristiano Ronaldo",
+    c: "Gerd Muller",
+    d: "Pelé",
+    correct: "c"
+    },
+    {
+    question: "Who is the oldest player to have ever played in a World Cup match?",
+    a: "Roger Milla",
+    b: "Faryd Mondragón",
+    c: "Essam El-Hadary",
+    d: "Dino Zoff",
+    correct: "b"
+    }, 
+    {
+    question: "Which country has won the most European Championships?",
+    a: "Germany",
+    b: "France",
+    c: "Spain",
+    d: "Italy",
+    correct: "a"
+    },
+    {
+    question: "Who is the all-time top scorer in the UEFA Champions League?",
+    a: "Lionel Messi",
+    b: "Cristiano Ronaldo",
+    c: "Raul",
+    d: "Karim Benzema",
+    correct: "b"
+    },
+    {
+    question: "Who is the youngest player to ever play in a World Cup match?",
+    a: "Pele",
+    b: "Diego Maradona",
+    c: "Lionel Messi",
+    d: "El Hadji Diouf",
+    correct: "a"
+    },
+  
+  {
     question: "What is the capital of Croatia?",
     a: "Zagreb",
     b: "Madrid",
     c: "Paris",
     d: "Berlin",
     correct: "a"
+  },
+  {
+    question: "Who is the author of the book 'To Kill a Mockingbird'?",
+    a: "F. Scott Fitzgerald",
+    b: "Harper Lee",
+    c: "J.D. Salinger",
+    d: "Ernest Hemingway",
+    correct: "b"
+  },
+  {
+    question: "Which country is the largest producer of cocoa in the world?",
+    a: "Brazil",
+    b: "Ghana",
+    c: "Ivory Coast",
+    d: "Indonesia",
+    correct: "c"
+  },
+  {
+    question: "In which year did the first man land on the moon?",
+    a: "1965",
+    b: "1967",
+    c: "1969",
+    d: "1971",
+    correct: "c"
+  },
+  {
+    question: "Who was the first person to reach the South Pole?",
+    a: "Roald Amundsen",
+    b: "Robert Scott",
+    c: "Ernest Shackleton",
+    d: "Edmund Hillary",
+    correct: "a"
+  },
+  {
+    question: "Which planet in our solar system has the most moons?",
+    a: "Saturn",
+    b: "Uranus",
+    c: "Jupiter",
+    d: "Neptune",
+    correct: "c"
+  },
+  {
+    question: "What is the highest mountain peak in North America?",
+    a: "Mount Everest",
+    b: "Mount Denali",
+    c: "Mount Kilimanjaro",
+    d: "Mount Vinson",
+    correct: "b"
+  },
+  {
+    question: "Who is the current President of France?",
+    a: "Emmanuel Macron",
+    b: "Francois Hollande",
+    c: "Nicolas Sarkozy",
+    d: "Jacques Chirac",
+    correct: "a"
+  },
+  {
+    question: "Which famous scientist is credited with discovering the laws of motion and universal gravitation?",
+    a: "Isaac Newton",
+    b: "Albert Einstein",
+    c: "Galileo Galilei",
+    d: "Johannes Kepler",
+    correct: "a"
+  },
+  {
+    question: "Which country is home to the world's largest waterfall by volume of water?",
+    a: "Brazil",
+    b: "United States",
+    c: "Canada",
+    d: "Venezuela",
+    correct: "d"
   },
   {
     question: "What is the capital of Zambia?",
@@ -487,3 +656,16 @@ SubmitEl.addEventListener('click', function(){
   }
 
 })
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
